@@ -1,14 +1,4 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f9fc;
-}
-
-h1 {
-  color: #1f3c88;
-}
-
-div {
-  max-width: 900px;
-  margin: auto;
+  background: #f4f6fb;
 }
