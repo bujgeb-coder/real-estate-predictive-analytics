@@ -24,3 +24,13 @@ npm run dev
 - `main` for stable versions
 - `feature/*` branches for new work
 - commit often with descriptive messages
+## Capstone Project
+
+AI-driven predictive analytics system designed to forecast housing prices
+and support real estate investment decisions using machine learning.
+
+### Features
+- Market trend forecasting
+- Scenario simulation
+- Property comparison
+- Interactive dashboard
