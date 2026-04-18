@@ -1,4 +1,285 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background: #f3f5f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background: #f4f6fb;
+  background: #f3f5f9;
+  color: #1f2937;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 32px 20px 48px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4f46e5;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.1;
+  color: #1e3a8a;
+}
+
+.hero-text {
+  max-width: 760px;
+  margin-top: 14px;
+  font-size: 22px;
+  color: #4b5563;
+}
+
+.hero-box {
+  min-width: 280px;
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.hero-box-label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.hero-box h3 {
+  margin: 8px 0 6px;
+  font-size: 24px;
+  color: #111827;
+}
+
+.hero-box p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.card,
+.panel {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.card-label {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card h2 {
+  margin: 10px 0 4px;
+  font-size: 34px;
+  color: #111827;
+}
+
+.card-note {
+  margin: 0;
+  color: #6b7280;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.panel h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #111827;
+}
+
+.panel-subtitle,
+.panel-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+.chart-area {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  height: 260px;
+  margin-top: 26px;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #eef2ff, #ffffff);
+}
+
+.bar-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 100%;
+  max-width: 56px;
+  border-radius: 14px 14px 0 0;
+  background: #1e3a8a;
+}
+
+.bar-wrap span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.driver-list {
+  margin-top: 20px;
+}
+
+.driver-item + .driver-item {
+  margin-top: 18px;
+}
+
+.driver-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress-track {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #2563eb;
+}
+
+.table-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+.table-panel th,
+.table-panel td {
+  text-align: left;
+  padding: 14px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-panel th {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.scenario-group {
+  margin-top: 18px;
+}
+
+.scenario-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.scenario-group input {
+  width: 100%;
+}
+
+.scenario-group span {
+  display: inline-block;
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.scenario-result {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #1e3a8a;
+  color: white;
+}
+
+.scenario-result p,
+.scenario-result span {
+  margin: 0;
+}
+
+.scenario-result h2 {
+  margin: 8px 0;
+  color: white;
+  font-size: 36px;
+}
+
+@media (max-width: 1024px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-grid,
+  .bottom-grid,
+  .hero {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
 }
